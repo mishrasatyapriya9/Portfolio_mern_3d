@@ -1,6 +1,6 @@
 .gradient_background {
   background: linear-gradient(90deg, rgba(249, 71, 77, 0.7), rgba(224, 6, 101, 0.7)),
-    url("../../../public/bg-explosion.png");
+    url("../../assets/bg-explosion.png");
   background-size: cover;
   height: 100vh;
   width: 100vw;

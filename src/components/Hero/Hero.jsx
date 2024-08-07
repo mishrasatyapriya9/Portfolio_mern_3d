@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 import "./Hero.css"
 import HeroContent from './HeroContent/HeroContent';
 import Backgroundformts from './../background/Backgroundformts';
