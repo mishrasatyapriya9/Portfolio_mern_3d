@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;1,400&display=swap");
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background-color: #343A40 !important;
+    font-family: Inter !important;
+
+}
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+body {
+  /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+  font-family: Inter !important;
+  background-color: #0c0c1d;
+  color: lightgray;
+}

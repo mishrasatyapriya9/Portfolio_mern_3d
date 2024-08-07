@@ -1,0 +1,10 @@
+.hero{
+z-index: 99999999;
+}
+.main{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
