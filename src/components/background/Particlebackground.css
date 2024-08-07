@@ -1,5 +1,5 @@
 .gradient_background {
-  background: linear-gradient(90deg, rgba(249, 71, 77, 0.7), rgba(224, 6, 101, 0.7)),
+  background: linear-gradient(90deg, rgba(28, 25, 26, 0.7), rgba(47, 38, 42, 0.7)),
     url("../../assets/bg-explosion.png");
   background-size: cover;
   height: 100vh;
