@@ -29,7 +29,7 @@ const Backgroundformts = () => {
       autoPlay: true,
       background: {
         // color: {
-        //   value: "#0d4551",
+        //   value: "#000000",
         // },
         image: "",
         position: "",
@@ -65,17 +65,17 @@ const Backgroundformts = () => {
             mode: "push",
           },
           onDiv: {
-            selectors: [],
+            selectors: {},
             enable: false,
-            mode: [],
+            mode: {},
             type: "circle",
           },
           onHover: {
             enable: true,
-            mode: "grab",
+            mode: "repulse",
             parallax: {
-              enable: true,
-              force: 60,
+              enable: false,
+              force: 2,
               smooth: 10,
             },
           },
@@ -102,16 +102,14 @@ const Backgroundformts = () => {
             distance: 200,
           },
           bubble: {
-            distance: 400,
-            duration: 2,
+            distance: 200,
+            duration: 0.4,
             mix: false,
-            opacity: 0.8,
-            size: 40,
             divs: {
               distance: 200,
               duration: 0.4,
               mix: false,
-              selectors: [],
+              selectors: {},
             },
           },
           connect: {
@@ -122,7 +120,7 @@ const Backgroundformts = () => {
             radius: 60,
           },
           grab: {
-            distance: 400,
+            distance: 100,
             links: {
               blink: false,
               consent: false,
@@ -151,7 +149,7 @@ const Backgroundformts = () => {
               speed: 1,
               maxSpeed: 50,
               easing: "ease-out-quad",
-              selectors: [],
+              selectors: {},
             },
           },
           slow: {
@@ -210,12 +208,12 @@ const Backgroundformts = () => {
           },
         },
         color: {
-          value: "#ffffff",
+          value: "#ff0000",
           animation: {
             h: {
               count: 0,
-              enable: false,
-              speed: 1,
+              enable: true,
+              speed: 20,
               decay: 0,
               delay: 0,
               sync: true,
@@ -245,9 +243,9 @@ const Backgroundformts = () => {
           close: true,
           fill: true,
           options: {},
-          type: [],
+          type: {},
         },
-        groups: {},
+        groups: [],
         move: {
           angle: {
             offset: 0,
@@ -295,7 +293,7 @@ const Backgroundformts = () => {
           },
           random: false,
           size: false,
-          speed: 2,
+          speed: 6,
           spin: {
             acceleration: 0,
             enable: false,
@@ -319,17 +317,14 @@ const Backgroundformts = () => {
             mode: "delete",
             value: 0,
           },
-          value: 100,
+          value: 80,
         },
         opacity: {
-          value: {
-            min: 0.1,
-            max: 0.5,
-          },
+          value: 0.5,
           animation: {
             count: 0,
-            enable: true,
-            speed: 3,
+            enable: false,
+            speed: 2,
             decay: 0,
             delay: 0,
             sync: false,
@@ -359,12 +354,12 @@ const Backgroundformts = () => {
         size: {
           value: {
             min: 1,
-            max: 10,
+            max: 3,
           },
           animation: {
             count: 0,
-            enable: true,
-            speed: 20,
+            enable: false,
+            speed: 5,
             decay: 0,
             delay: 0,
             sync: false,
@@ -512,7 +507,7 @@ const Backgroundformts = () => {
           distance: 1,
           duration: 1,
           factor: 1,
-          speed: 1,
+          speed: 0.3,
         },
       },
       pauseOnBlur: true,
@@ -522,7 +517,7 @@ const Backgroundformts = () => {
       style: {},
       themes: [],
       zLayers: 100,
-      name: "Parallax",
+      name: "Basic",
       motion: {
         disable: false,
         reduce: {

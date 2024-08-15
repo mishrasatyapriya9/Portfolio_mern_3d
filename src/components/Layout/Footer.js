@@ -46,15 +46,19 @@ const Footer = () => {
                   </h3>
                   <ul className="list-unstyled f_list">
                     <li>
-                      <a href="/">
-                        Address - office no. 109, 1st floor,Noida,Uttar Pradesh
+                      <a href="/" className="footertext">
+                        Address - Bhubaneswar,Odisha,751024
                       </a>
                     </li>
                     <li>
-                      <a href="/">email - info@meharhospitalityservices.com</a>
+                      <a href="/" className="footertext">
+                        email - mishrasatyapriya2003@gmail.com
+                      </a>
                     </li>
                     <li>
-                      <a href="/">Landline - 0120-4951373</a>
+                      <a href="/" className="footertext">
+                        Ph Number - +91 7982319067
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -69,23 +73,30 @@ const Footer = () => {
                     animationName: "fadeInLeft",
                   }}
                 >
-                  <h3 className="f-title f_600 t_color f_size_18">
+                  <h3 className="f-title f_600 t_color f_size_18 footertext">
                     Quicklinks
                   </h3>
                   <ul className="list-unstyled f_list">
                     <li>
                       <a href="/">
-                        <p>Home</p>
+                        <p className="footertext">Home</p>
                       </a>
                     </li>
                     <li>
-                      <Link to="/aboutus">
-                        <p>About</p>
+                      <Link to="#">
+                        <p className="footertext">About</p>
                       </Link>
                     </li>
                     <li>
                       <Link>
-                        <p onClick={scrollToContact}>Contact us</p>
+                        <p onClick={scrollToContact} className="footertext">
+                          Contact us
+                        </p>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://api.whatsapp.com/send?phone=7982319067">
+                        <p className="footertext">Whatsapp</p>
                       </Link>
                     </li>
                   </ul>
@@ -101,7 +112,7 @@ const Footer = () => {
                     animationName: "fadeInLeft",
                   }}
                 >
-                  {/* <h3 className="f-title f_600 t_color f_size_18">
+                  <h3 className="f-title f_600 t_color f_size_18">
                     Team Solutions
                   </h3>
                   <div className="f_social_icon">
@@ -117,7 +128,7 @@ const Footer = () => {
                     <a href="/" className="fab fa-pinterest">
                       .
                     </a>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -131,17 +142,17 @@ const Footer = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-sm-7">
-                <p className="mb-0 f_400">
-                  © MEHAR HOSPITALITY SERVICES Inc.. 2024 All rights reserved.
+                <p className="mb-0 f_400 footertext">
+                  © Inc.. 2024 All rights reserved.
                 </p>
               </div>
               <div className="col-lg-6 col-sm-5 text-right">
-                {/* <p>
+                <p>
                   Designed and Developed by - <i className="icon_heart" />{" "}
-                  <a href="https://www.linkedin.com/in/puneet-chhabra">
-                    <h6 style={{ fontSize: "10px" }}>Puneet Chhabra</h6>
+                  <a href="https://www.linkedin.com/in/satyapriya-mishra-3a95a4223/">
+                    <h6 style={{ fontSize: "10px" }}>Satyapriya Mishra</h6>
                   </a>
-                </p> */}
+                </p>
               </div>
             </div>
           </div>

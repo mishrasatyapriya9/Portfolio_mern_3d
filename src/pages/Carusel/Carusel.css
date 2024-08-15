@@ -11,6 +11,7 @@ body {
 }
 .caruselhead{
   top: 0;
+  overflow: hidden;
   /* padding-top: 10px; */
 }
 .caruselhead .header {

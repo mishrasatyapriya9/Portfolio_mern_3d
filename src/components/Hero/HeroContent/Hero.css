@@ -1,10 +1,318 @@
-.hero{
-z-index: 99999999;
+/* .hero {
+  z-index: 99999999;
+} */
+.container {
+  overflow: hidden; /* This ensures the sliding text stays within the viewport */
+  /* z-index: 1; */
+  /* display: flex;
+   align-items: center;
+   width: 100%; */
 }
-.main{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  cursor: pointer;
+}
+.buttons {
+  color: white;
+}
+.wrapper {
+  left: 10px;
+  margin-left: 20%;
+  margin-right: 0%;
+}
+.textcontainer {
+  top: 0;
+  font-family: Cinzel;
+}
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
 
+.fastFlicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+@keyframes shine {
+  0% {
+    color: #e5060e;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem rgb(226, 134, 43),
+      -0.2rem 0.1rem 1rem rgb(255, 220, 65), 0.2rem 0.1rem 1rem #570b36,
+      0 -0.5rem 2rem rgb(236, 233, 122), 0 0.5rem 3rem rgb(235, 135, 13);
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #f50632, 0 0 1.5rem rgb(253, 5, 51),
+      -0.2rem 0.1rem 1rem rgb(154, 79, 224), 0.2rem 0.1rem 1rem #570b36,
+      0 -0.5rem 2rem rgb(250, 3, 16), 0 0.5rem 3rem rgb(251, 6, 6);
+  }
+  28%,
+  33% {
+    color: rgb(80, 80, 235);
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: rgb(80, 80, 235);
+    text-shadow: none;
+  }
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.btn1 {
+  border: none;
+  background-color: #eee;
+  letter-spacing: 2px;
+  font-family: Inter;
+  font-weight: 700;
+  color: black;
+}
+.btn2 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #eee;
+  font-family: INter;
+}
+.name {
+  color: white;
+  font-size: 30px;
+    font-family: poppins;
+}
+.mainname{
+  color: white;
+  font-size: 40px;
+}
+.textContainersliding {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  /* align-items: center; */
+  /* top: 90px !important;
+  bottom: 0%; */
+  width: 100%;
+}
+.slidingtext {
+  /* position: absolute;
+  bottom: 43px;
+  font-size: 19vh;
+  white-space: nowrap;
+  z-index: 99999999;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  width: 90% !important;
+  overflow: hidden !important;
+  font: bold; */
+  /* position: absolute; */
+  top: 30%;
+  z-index: 99999999;
+  bottom: 20px;
+  display: inline-block;
+  font-size: 10rem; /* Adjust based on your design */
+  padding-left: 100%;
+  will-change: transform;
+  font-family: "Playfair Display", serif;
+}
+.textScrolling {
+  /* bottom: 100%;
+  top: 90px;
+  left: 30%; */
+  /* margin-bottom: 0px; */
+  margin-top: 30%;
+  color: white;
+}
+.textContainerscroll {
+}
+.imageContainer {
+  margin-left: 12%;
+  right: 0 !important;
+  top: 0 !important;
+  padding-right: 9%;
+}
+/* .container {
+  display: flex;
+} */
+
+/* responsiveness making  */
+@media screen and (max-width: 500px) {
+  .wrapper {
+    left: 0px;
+    margin-top: 0%;
+    margin-left: 7%;
+    top: 0;
+  }
+  .name {
+  color: white;
+  font-size: 25px;
+  font-family: poppins;
+}
+.mainname{
+  color: white;
+  font-size: 30px;
+}
+  .textScrolling {
+    /* bottom: 100%;
+  top: 90px;
+  left: 30%; */
+    /* margin-bottom: 0px; */
+    margin-top: 90%;
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wrapper {
+    left: 0px;
+    margin-left: 5%;
+    margin-right: 0%;
+    top: 0;
+  }
+  .textScrolling {
+    /* bottom: 100%;
+  top: 90px;
+  left: 30%; */
+    /* margin-bottom: 0px; */
+    margin-top: 97%;
+    font-size: 50px !important;
+  }
 }

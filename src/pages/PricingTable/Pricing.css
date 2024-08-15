@@ -1,3 +1,4 @@
+
 ul,
 li {
   padding: 0;
@@ -10,12 +11,13 @@ li {
 }
 
 .center-heading .section-title {
-  font-weight: 400;
-  font-size: 28px;
+  font-weight: 900;
+  font-size: 35px;
   color: #3b566e;
   letter-spacing: 1.75px;
   line-height: 38px;
   margin-bottom: 20px;
+  font-family: Cinzel;
 }
 
 .center-heading.colored .section-title {
@@ -25,7 +27,7 @@ li {
 .center-text {
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 23px;
   color: #6f8ba4;
   line-height: 28px;
   letter-spacing: 1px;
@@ -48,7 +50,12 @@ li {
   margin-top: 20px;
 }
 
+.active{
+  color: black !important;
+}
 .pricing-item.active .pricing-header {
+  text-align: center !important;
+  align-items: center !important;
   position: relative;
 }
 
@@ -102,18 +109,22 @@ li {
   /* background-image: linear-gradient(135deg, #e73d3d 0%, #decb3d 100%); */
 }
 .pricing-item .pricing-header .pricing-title1{
-  background-color: #800020;
+  background: linear-gradient( to right, var(--color-primary) 0%, var(--color-white) 100% );
   /* border-radius: 20%; */
   font-weight: 900;
+  color:  black;
 }
 .pricing-item .pricing-header .pricing-title2{
-background-color: #800020;
-  /* border-radius: 20%; */
-  font-weight: 900;}
-.pricing-item .pricing-header .pricing-title3{
-  background-color: #800020;
+background: linear-gradient( to right, var(--color-primary) 0%, var(--color-white) 100% );
   /* border-radius: 20%; */
   font-weight: 900;
+  color:  black !important;
+}
+.pricing-item .pricing-header .pricing-title3{
+ background: linear-gradient( to right, var(--color-primary) 0%, var(--color-white) 100% );
+  /* border-radius: 20%; */
+  font-weight: 900;
+  color:  black;
 }
 .pricing-item .pricing-body {
   margin-bottom: 40px;
@@ -197,21 +208,21 @@ background-color: #800020;
   position: relative;
 }
 .pricing-item .pricing-footer .btn-primary-line {
-  border: 1px solid #e64b3d;
-  color: #e64b3d;
+  border: 1px solid  #8750f7;
+  color: #8750f7;
   height: 36px;
   line-height: 36px;
 }
 
 .pricing-item .pricing-footer .plantinumb:hover {
-  background: #800020;
-  color: white;
+  background: linear-gradient( to right, var(--color-primary) 0%, var(--color-white) 80% );
+  color: black;
 }
 .pricing-item .pricing-footer .goldb:hover {
-  background: #800020;
-  color: white;
+  background: linear-gradient( to right, var(--color-primary) 0%, var(--color-white) 80% );
+  color: black;
 }
 .pricing-item .pricing-footer .silverb:hover {
-  background: #800020;
-  color: white;
+  background: linear-gradient( to right, var(--color-primary) 0%, var(--color-white) 80% );
+  color: black;
 }

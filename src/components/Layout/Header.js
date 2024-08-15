@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/Mehar hospitality Logo-01.svg";
+import satyalogo from "../../assets/Logo.gif"
 import "./Header.css";
 import { motion, spring } from "framer-motion";
 // import list from "../../assets/list.jpeg"
@@ -35,7 +36,11 @@ function Header({ scrollToComponent }) {
         variant="dark"
       >
         <Container fluid>
-          <img src={logo} alt="Mehar Hospitality Services" className="icon" />
+          <img
+            src={satyalogo}
+            alt="Mehar Hospitality Services"
+            className="icon"
+          />
           <Navbar.Brand>
             <Link to="/" className="text-decoration-none">
               <motion.h5
@@ -99,7 +104,11 @@ function Header({ scrollToComponent }) {
                     Pricing
                   </motion.h6>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/aboutus">
+                <Nav.Link
+                  as={Link}
+                  to="#"
+                  onClick={() => scrollToComponent("about")}
+                >
                   <motion.h6
                     style={{ color: "black" }}
                     initial={{ opacity: 0, scale: 0.6 }}

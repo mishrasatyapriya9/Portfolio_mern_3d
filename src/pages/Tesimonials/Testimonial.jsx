@@ -7,18 +7,22 @@ import {
   MDBIcon,
   MDBRow,
 } from "mdb-react-ui-kit";
-import rishbh2 from "../../assets/ReviewPhotos/rishbh2.jpeg";
-import amar2 from "../../assets/ReviewPhotos/amar2.jpeg";
-import geetika2 from "../../assets/ReviewPhotos/geetika2.jpeg";
+import rishbh2 from "../../assets/ReviewPhotos/male1.jpg";
+import amar2 from "../../assets/ReviewPhotos/female2.jpg";
+import geetika2 from "../../assets/ReviewPhotos/male3.jpg";
 
 export default function App() {
   return (
     <MDBContainer className="py-5">
       <MDBRow className="d-flex justify-content-center">
         <MDBCol md="10" xl="8" className="text-center">
-          <h3 className="mb-4">Reviews</h3>
+          <h3 className="mb-4 primary__title" style={{ fontFamily: "Cinzel" }}>
+            Reviews
+          </h3>
           <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-            <h6>What customer says about us</h6>
+            <h6 className="primary__title" style={{ fontSize: "20px" }}>
+              What customer says about us
+            </h6>
           </p>
         </MDBCol>
       </MDBRow>
@@ -38,16 +42,19 @@ export default function App() {
               />
             </div>
             <MDBCardBody>
-              <h4 className="mb-4">Rishabh</h4>
+              <h4 className="mb-4" style={{ color: "white" }}>
+                Rajesh Kumar
+              </h4>
               <hr />
-              <p className="dark-grey-text mt-4">
+              <p className="dark-grey-text mt-4" style={{ fontSize: "15px" }}>
                 <MDBIcon fas icon="quote-left" className="pe-2" />
-                <b>Mehar Hospitality Services</b> helped me discover the magic
-                of Kerala. Their membership offered amazing deals on premium
-                hotels, allowing me to stay in a luxurious and comfortable
-                location. The trip was perfectly planned, and I had the
-                opportunity to explore the stunning backwaters and experience
-                the vibrant local culture.
+                Working with Satyapriya Mishra was an absolute pleasure. he
+                brought our vision to life with a stunning and user-friendly
+                website that exceeded our expectations. His attention to detail,
+                timely communication, and expertise in web development made the
+                entire process smooth and hassle-free.And his deployment work
+                was very awesome and quick. I highly recommend Satyapriya for
+                anyone looking for top-notch web development services.
               </p>
             </MDBCardBody>
           </MDBCard>
@@ -67,21 +74,20 @@ export default function App() {
               />
             </div>
             <MDBCardBody>
-              <h4 className="mb-4">Amar</h4>
+              <h4 className="mb-4" style={{ color: "white" }}>
+                {" "}
+                Anjali Verma
+              </h4>
               <hr />
-              <p className="dark-grey-text mt-4">
+              <p className="dark-grey-text mt-4" style={{ fontSize: "15px" }}>
                 <MDBIcon fas icon="quote-left" className="pe-2" />
-                Exploring the dazzling metropolis of Dubai was a dream come
-                true, and <b>Mehar Hospitality Services </b> made it even
-                better. Their membership program provided access to a luxurious
-                hotel in the heart of the action. From the breathtaking views
-                from my room to the exceptional service, the hotel stay was
-                outstanding. Mehar's recommendations for local experiences were
-                fantastic! I visited the iconic Burj Khalifa, explored the
-                bustling souks, and even embarked on a thrilling desert safari.
-                My Dubai trip was a perfect blend of luxury, adventure, and
-                cultural immersion. I highly recommend them to anyone planning a
-                trip to this unforgettable city.
+                Satyapriya is an incredibly talented developer who transformed
+                our outdated website into a modern, responsive platform that has
+                significantly improved our online presence And he did the
+                deployment part very well. He was patiently, understood our
+                requirements perfectly, and delivered a website that not only
+                looks great but also performs flawlessly. His dedication and
+                professionalism are truly commendable.
               </p>
             </MDBCardBody>
           </MDBCard>
@@ -101,18 +107,19 @@ export default function App() {
               />
             </div>
             <MDBCardBody>
-              <h4 className="mb-4">Geetika</h4>
+              <h4 className="mb-4" style={{ color: "white" }}>
+                Vikram Singh
+              </h4>
               <hr />
-              <p className="dark-grey-text mt-4">
-                <MDBIcon fas icon="quote-left" className="pe-2" />
-                I was initially
-                skeptical about membership programs, but{" "}
-                <b> Mehar Hospitality Services </b> impressed me. They offered
-                incredible deals on premium hotels across Rajasthan. Thanks to
-                their membership, we stayed in magnificent palaces and charming
-                boutique hotels at a fraction of the usual cost. The best part?
-                The hotels were all outstanding! We'll definitely be using Mehar
-                again for our next Indian getaway.
+              <p className="dark-grey-text mt-4" style={{ fontSize: "15px" }}>
+                <MDBIcon fas icon="quote-left" className="pe-2" />I approached
+                Satyapriya with a challenging project, and He delivered beyond
+                my expectations. The website he developed for my fitness
+                coaching business is sleek, fast, and easy to navigate.
+                Satyapriya's ability to integrate complex features and create a
+                seamless user experience is remarkable. I’ve received so many
+                compliments on the site, and it’s all thanks to their hard work
+                and expertise.
               </p>
             </MDBCardBody>
           </MDBCard>

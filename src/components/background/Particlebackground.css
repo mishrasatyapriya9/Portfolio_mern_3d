@@ -1,14 +1,36 @@
 .gradient_background {
-  background: linear-gradient(90deg, rgba(28, 25, 26, 0.7), rgba(47, 38, 42, 0.7)),
+  background: linear-gradient(
+      90deg,
+      rgba(28, 25, 26, 0.7),
+      rgba(47, 38, 42, 0.7)
+    ),
     url("../../assets/bg-explosion.png");
+  /* background: linear-gradient(180deg,#0c0c1d,#111132); */
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode:hard-light; /* Mixes the image with the gradient */
+  background-blend-mode: hard-light; /* Mixes the image with the gradient */
   /* z-index: 0; */
 }
+/* @media screen and (max-width: 00px) {
+  .gradient_background {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(63, 51, 56, 0.7)
+    ),
+    url("../../assets/bg-explosion.png");
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light; 
+}
+} */
+
 
 /* https://codepen.io/marcobiedermann/pen/WNGWzYR */
 /* gradient color codes ,degree is 135 */

@@ -1,0 +1,127 @@
+.timelinecontainer {
+  background: #01090e;
+  font-family: "Cinzel","Montserrat", sans-serif;
+  font-size: 16px;
+  /* color: rgb(53, 53, 53); */
+}
+.timelinecontainer{
+color: white;
+}
+.heading{
+  color: #f3bc3c;
+  font-family: Cinzel;
+}
+.timelinetitle {
+  font-size: 5em;
+  text-align: center;
+  font-family: Cinzel;
+  color: rgb(240, 101, 101);
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+.vertical-timeline-element-title{
+  font-family: Glock;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(55, 46, 46);
+}
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  color: rgb(250, 251, 251) !important;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+  color:rgb(53, 53, 53);
+  font-family: poppins;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #0ac591;
+  font-family: poppins;
+}
+
+.workButton:hover {
+  background-color: #0ac593;
+  font-family: poppins;
+}
+
+.schoolButton {
+  background-color: #f3bc3b;
+  font-family: poppins;
+}
+
+.schoolButton:hover {
+  background-color: #f3bc3c;
+  font-family: poppins;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(57, 55, 55) !important;
+    margin-top: 1em;
+    /* border: 3px solid red; */
+  }
+  
+  .vertical-timeline-element-title{
+  font-family: Glock;
+  /* font-weight: 700;
+  font-size: 30px; */
+}
+.date {
+  color: rgb(250, 251, 251) !important;
+  font-family: poppins;
+}
+}
+@media only screen and (max-width: 500px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(57, 55, 55) !important;
+    margin-top: 1em;
+    /* border: 3px solid red; */
+  }
+  .vertical-timeline-element-title{
+  font-family: Cinzel !important;
+  /* font-weight: 700;
+  font-size: 30px; */
+}
+.date {
+  color: rgb(14, 15, 15) !important;
+  font-family: poppins;
+}
+}
+@media only screen and (max-width: 400px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(57, 55, 55) !important;
+    margin-top: 1em;
+    /* border: 3px solid red; */
+  }
+  .vertical-timeline-element-title{
+  font-family: Cinzel !important;
+  /* font-weight: 700;
+  font-size: 30px; */
+}
+.date {
+  color: rgb(27, 29, 29) !important;
+  font-family: poppins;
+}
+}

@@ -110,7 +110,7 @@
 
 @media screen and (max-width: 500px) {
   .textmehar {
-    font-size: 12px !important;
+    font-size: 19px !important;
   }
   .listitem {
     width: 30px !important;
@@ -152,7 +152,7 @@
     visibility:visible;
   } */
   .textmehar {
-    font-size: 9px !important;
+    font-size: 17px !important;
   }
   .listitem {
     width: 30px !important;

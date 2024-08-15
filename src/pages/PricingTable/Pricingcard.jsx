@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-import { PlanContext } from "../context/PlanContext.js"
+import { PlanContext } from "../context/PlanContext.js";
 import "./Pricing.css";
-// import { Link } from "react-router-dom";
 
 const Pricingcard = ({ scrollToComponent }) => {
   const { setSelectedPlan } = useContext(PlanContext);
@@ -16,22 +15,22 @@ const Pricingcard = ({ scrollToComponent }) => {
       <section className="section pt-5 pb-5" id="pricing-plans">
         <div className="top" />
         <div className="container">
-          {/* ***** Section Title Start ***** */}
           <div className="row">
             <div className="col-lg-12">
               <div className="center-heading">
-                <h2 className="section-title">Join Club Fusion</h2>
+                <h1 className="primary__title" style={{ fontFamily: "Cinzel" }}>
+                  Plans
+                </h1>
               </div>
             </div>
             <div className="offset-lg-3 col-lg-6">
               <div className="center-text">
-                <p>Membership Plans</p>
+                <p>Choose the perfect plan for your needs</p>
               </div>
             </div>
           </div>
-          {/* ***** Section Title End ***** */}
           <div className="row">
-            {/* ***** Pricing Item Start ***** */}
+            {/* ***** Silver Plan Start ***** */}
             <div className="col-lg-4 col-md-6">
               <div className="pricing-item">
                 <div className="pricing-header">
@@ -39,31 +38,21 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
                 <div className="pricing-body">
                   <div className="price-wrapper">
-                    <span className="currency"></span>
-                    <span className="price">
-                      15,999/-
-                      <br />
-                      <p
-                        className="price"
-                        style={{ fontSize: "15px", marginTop: "0px" }}
-                      >
-                        Inclusive of all taxes
-                      </p>
-                    </span>
-                    <span className="period"></span>
+                    <span className="price">₹15,999/-</span>
+                    <br />
+                    <p
+                      className="price"
+                      style={{ fontSize: "15px", marginTop: "0px" }}
+                    >
+                      Inclusive of all taxes
+                    </p>
                   </div>
                   <ul className="list">
-                    <li className="active">
-                      2 Complimentary Night Stay With Morning Breakfast
-                    </li>
-                    <li className="active">
-                      2 Complimentary Buffet Meal Voucher For 2 Pax{" "}
-                    </li>
-                    <li className="active">2 Complimentary Cakes</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li className="active">Website Design & Development</li>
+                    <li className="active">Basic SEO Optimization</li>
+                    <li className="active">Domain & Hosting Setup</li>
+                    <li className="active">Deployment on VPS</li>
+                    <li className="active">Basic Support for 1 Month</li>
                   </ul>
                 </div>
                 <div className="pricing-footer">
@@ -76,8 +65,9 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
               </div>
             </div>
-            {/* ***** Pricing Item End ***** */}
-            {/* ***** Pricing Item Start ***** */}
+            {/* ***** Silver Plan End ***** */}
+
+            {/* ***** Gold Plan Start ***** */}
             <div className="col-lg-4 col-md-6">
               <div className="pricing-item active">
                 <div className="pricing-header">
@@ -85,39 +75,26 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
                 <div className="pricing-body">
                   <div className="price-wrapper">
-                    <span className="currency"></span>
-                    <span className="price">
-                      25,999/-
-                      <br />
-                      <p
-                        className="price"
-                        style={{
-                          fontSize: "15px",
-                          marginTop: "0px",
-                          marginBottom: "4px",
-                          paddingBottom: "4px",
-                        }}
-                      >
-                        Inclusive of all taxes
-                      </p>
-                    </span>
-                    {/* <span className="period">inclusive of all taxes</span> */}
+                    <span className="price">₹25,999/-</span>
+                    <br />
+                    <p
+                      className="price"
+                      style={{
+                        fontSize: "15px",
+                        marginTop: "0px",
+                        marginBottom: "4px",
+                        paddingBottom: "4px",
+                      }}
+                    >
+                      Inclusive of all taxes
+                    </p>
                   </div>
                   <ul className="list">
-                    <li className="active">
-                      International Bookings Available.
-                    </li>
-                    <li className="active">
-                      4 Complimentary Night Stay With Morning Breakfast
-                    </li>
-                    <li className="active">
-                      4 Complimentary Buffet Meal Vouchers For 2 Pax
-                    </li>
-                    <li className="active">4 Complimentary Cakes. </li>
-                    {/* <li className="active">Data Security and Backups</li>
-                    <li className="active">1 GB Storage</li>
-                    <li>24x7 Great Support</li>
-                    <li>Monthly Reports and Analytics</li> */}
+                    <li className="active">Everything in Silver Plan</li>
+                    <li className="active">Enhanced SEO Optimization</li>
+                    <li className="active">Custom Email Setup</li>
+                    <li className="active">Deployment on VPS or AWS</li>
+                    <li className="active">Premium Support for 3 Months</li>
                   </ul>
                 </div>
                 <div className="pricing-footer">
@@ -130,8 +107,9 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
               </div>
             </div>
-            {/* ***** Pricing Item End ***** */}
-            {/* ***** Pricing Item Start ***** */}
+            {/* ***** Gold Plan End ***** */}
+
+            {/* ***** Platinum Plan Start ***** */}
             <div className="col-lg-4 col-md-6">
               <div className="pricing-item">
                 <div className="pricing-header">
@@ -139,38 +117,28 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
                 <div className="pricing-body">
                   <div className="price-wrapper">
-                    <span className="currency"></span>
-                    <span className="price">
-                      35,999/-
-                      <br />
-                      <p
-                        className="price"
-                        style={{ fontSize: "15px", marginTop: "0px" }}
-                      >
-                        Inclusive of all taxes
-                      </p>
-                    </span>
-                    {/* <span className="period">inclusive of all taxes</span> */}
+                    <span className="price">₹35,999/-</span>
+                    <br />
+                    <p
+                      className="price"
+                      style={{ fontSize: "15px", marginTop: "0px" }}
+                    >
+                      Inclusive of all taxes
+                    </p>
                   </div>
                   <ul className="list">
+                    <li className="active">Everything in Gold Plan</li>
+                    <li className="active">Advanced Customizations</li>
+                    <li className="active">E-commerce Integration</li>
                     <li className="active">
-                      Luxurious Stays Available Pan India
+                      Deployment on AWS with Load Balancing
                     </li>
-                    <li className="active">3 Night Stay Complimentary </li>
-                    <li className="active">
-                      3 Complimentary Buffet Meal Vouchers For 2 Pax
-                    </li>
-                    <li className="active">3 Complimentary Cakes</li>
-                    {/* <li className="active">Highest Speed</li>
-                    <li className="active">Data Security and Backups</li>
-                    <li className="active">1 GB Storage</li>
-                    <li className="active">24x7 Great Support</li>
-                    <li className="active">Monthly Reports and Analytics</li> */}
+                    <li className="active">Priority Support for 6 Months</li>
                   </ul>
                 </div>
                 <div className="pricing-footer">
                   <p
-                    className="btn-primary-line plantinumb"
+                    className="btn-primary-line goldb"
                     onClick={() => handleSelectPlan("Platinum")}
                   >
                     Select Plan
@@ -178,7 +146,7 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
               </div>
             </div>
-            {/* ***** Pricing Item End ***** */}
+            {/* ***** Platinum Plan End ***** */}
           </div>
         </div>
       </section>
