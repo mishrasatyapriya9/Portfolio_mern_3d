@@ -44,9 +44,9 @@ const Homepage = () => {
       <Projects />
       {/* <Carusel scrollToComponent={scrollToComponent} />
       <Intro /> */}
-      <Element name="cardSliding">
+      {/* <Element name="cardSliding">
         <CardSliding />
-      </Element>
+      </Element> */}
       {/* <FacilityProvide /> */}
       {/* <LogoScrolling /> */}
       <Element name="pricing">
