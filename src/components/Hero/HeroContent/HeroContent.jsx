@@ -1,5 +1,5 @@
 import "./Hero.css";
-import profilepic from "../../../assets/IMG_20240725_173925.png";
+import profilepic from "../../../assets/Untitled_design__1_-removebg-preview.png";
 import styled from "styled-components";
 import { motion } from 'framer-motion';
 const HeroContent = () => {
@@ -129,7 +129,7 @@ const HeroContent = () => {
             ease: "linear",
           }}
         >
-          Full Stack Developer,UI Designer,Content Creator
+          Full Stack Developer,UI Designer,App Developer 
         </ScrollingText>
       </ScrollingWrapper>
     </div>
