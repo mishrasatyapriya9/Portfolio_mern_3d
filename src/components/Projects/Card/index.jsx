@@ -89,6 +89,10 @@ const Card = (props) => {
                   <a href={props.demoLink} target="__blank" className="btn btn__primary" style={{color:"white"}}>Demo</a>
                                    <div className={"btn__share"}><AiOutlineShareAlt/></div>
                                </div>
+                               <div className={"button__container"}>
+                  <a href={props.demoLink} target="__blank" className="btn btn__primary" style={{color:"white"}}>Demo</a>
+                                   <div className={"btn__share"}><AiOutlineShareAlt/></div>
+                               </div>
                           </div>
                      </div>
         </div>
