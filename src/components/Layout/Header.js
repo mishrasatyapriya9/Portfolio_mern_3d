@@ -92,6 +92,21 @@ function Header({ scrollToComponent }) {
                 <Nav.Link
                   as={Link}
                   to="/"
+                  onClick={() => scrollToComponent("projects")}
+                >
+                  <motion.h6
+                    style={{ color: "black" }}
+                    initial={{ opacity: 0, scale: 0.6 }}
+                    animate={{ opacity: 2, scale: 1 }}
+                    transition={{ duration: 2, type: spring, stiffness: 100 }}
+                    whileHover={{ y: -2 }}
+                  >
+                    Projects
+                  </motion.h6>
+                </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/"
                   onClick={() => scrollToComponent("services")}
                 >
                   <motion.h6
