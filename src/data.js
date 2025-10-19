@@ -4,7 +4,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
 import { SiNumpy, SiPandas, SiWhatsapp } from "react-icons/si";
 import { SiJupyter } from "react-icons/si";
-
+import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiFiverr } from "react-icons/si";
@@ -23,6 +23,16 @@ import napft from "../src/assets/napft.png";
 import { SiHiveBlockchain } from "react-icons/si";
 import portfolio from "../src/assets/portfoliosatya.png";
 import Mehar from "../src/assets/Mehar.png";
+import appecom from "../src/assets/app-ecommerece.jpg"
+import travelImgPro from "../src/assets/travelImageProject.png"
+import schoolManage from "../src/assets/schoolManage.png"
+import { SiRedux,  SiExpo,  } from "react-icons/si";
+import { MdStorage } from "react-icons/md";
+import { RiShoppingCart2Fill } from "react-icons/ri";
+import { TbBrandRedux } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
+
+
 export const menu = [
   { name: "About" },
   { name: "Services" },
@@ -35,37 +45,50 @@ export const menu = [
 export const projects = [
   {
     id: 1,
-    title: "NAFFT: NFT Marketplace",
-    image: napft,
-    category: "Web",
+    title: "School Management System",
+    image:schoolManage,
+    category: "Full Stack Website",
     data: {
-      description: `Crafted with cutting-edge technology, NAFFT is a fully-featured NFT marketplace where users can seamlessly create, buy, sell, and trade NFTs. Developed using the MERN stack, the platform is reinforced with blockchain integration, ensuring secure and transparent transactions. Advanced 3D features elevate the user experience, providing a dynamic environment for NFT enthusiasts. Hosted on Hostinger, NAFFT showcases my ability to blend innovative technologies into a cohesive, high-performance platform that meets the demands of a rapidly evolving digital market.`,
-      demoLink: "https://napft.com/",
+      description: `The School Management System is a full-featured web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. 
+    It streamlines school management, class organization, and communication between students, teachers, and administrators. 
+    With role-based access, attendance tracking, performance assessment, and real-time feedback, the system ensures efficient and transparent academic management.`,
+      demoLink: "https://github.com/mishrasatyapriya9/MERN-School-Management-System",
     },
-    buttonname: "live Website",
     stack: [
       {
-        name: "ReactJs",
+        name: "React.js",
         icon: <DiReact />,
         iconColor: "skyblue",
       },
       {
-        name: "NodeJs",
+        name: "Redux Toolkit",
+        icon: <TbBrandRedux />,
+        iconColor: "purple",
+     },
+      {
+        name: "JavaScript",
+        icon: <IoLogoJavascript />,
+        iconColor: "#F7DF1E",
+      },
+      {
+        name: "Node.js",
         icon: <FaNodeJs />,
         iconColor: "green",
       },
       {
-        name: "ExpressJs",
+        name: "Express.js",
         icon: <SiExpress />,
+        iconColor: "gray",
       },
       {
         name: "MongoDB",
         icon: <SiMongodb />,
-        iconColor: "limegreen",
+        iconColor: "darkgreen",
       },
       {
-        name: "Blockchain",
-        icon: <SiHiveBlockchain />,
+        name: "Tailwind CSS",
+        icon: <RiTailwindCssFill />,
+        iconColor: "#38BDF8",
       },
     ],
   },
@@ -87,6 +110,11 @@ components,notification system,email delivery system and hosted in web hosting a
         icon: <DiReact />,
         iconColor: "skyblue",
       },
+      {
+        name: "Redux Toolkit",
+        icon: <TbBrandRedux />,
+        iconColor: "purple",
+     },
       {
         name: "NodeJs",
         icon: <FaNodeJs />,
@@ -110,6 +138,45 @@ components,notification system,email delivery system and hosted in web hosting a
   },
   {
     id: 3,
+    title: "Netflix Clone",
+    image:
+      "https://cdn.dribbble.com/userupload/5919110/file/original-4fd69ed014f2e248f331b3ce341bee69.png?resize=1905x1429",
+    category: "Web",
+    data: {
+      description: `A video streaming Platform with user authentication, movie browsing, and video streaming.Developed a responsive UI with React and styled-components for seamless multi-device experience. Managed MongoDB for efficient storage, retrieval, and aggregation of user and media data, allowing users to search,
+filter, and view detailed content.Enhanced performance with server-side rendering, Redux state management, and Redis caching.`,
+      demoLink: "https://github.com/mishrasatyapriya9/NetFlix-clone",
+    },
+    buttonname: "Checkout Code",
+    stack: [
+      {
+        name: "ReactJs",
+        icon: <DiReact />,
+        iconColor: "skyblue",
+      },
+      {
+        name: "Redux Toolkit",
+        icon: <TbBrandRedux />,
+        iconColor: "purple",
+     },
+      {
+        name: "NodeJs",
+        icon: <FaNodeJs />,
+        iconColor: "green",
+      },
+      {
+        name: "ExpressJs",
+        icon: <SiExpress />,
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb />,
+        iconColor: "limegreen",
+      },
+    ],
+  },
+  {
+    id: 4,
     title: "Portfolio Website",
     image: portfolio,
     category: "Web",
@@ -145,40 +212,7 @@ components,notification system,email delivery system and hosted in web hosting a
       },
     ],
   },
-  {
-    id: 4,
-    title: "Netflix Clone",
-    image:
-      "https://cdn.dribbble.com/userupload/5919110/file/original-4fd69ed014f2e248f331b3ce341bee69.png?resize=1905x1429",
-    category: "Web",
-    data: {
-      description: `A video streaming Platform with user authentication, movie browsing, and video streaming.Developed a responsive UI with React and styled-components for seamless multi-device experience. Managed MongoDB for efficient storage, retrieval, and aggregation of user and media data, allowing users to search,
-filter, and view detailed content.Enhanced performance with server-side rendering, Redux state management, and Redis caching.`,
-      demoLink: "https://github.com/mishrasatyapriya9/NetFlix-clone",
-    },
-    buttonname: "Checkout Code",
-    stack: [
-      {
-        name: "ReactJs",
-        icon: <DiReact />,
-        iconColor: "skyblue",
-      },
-      {
-        name: "NodeJs",
-        icon: <FaNodeJs />,
-        iconColor: "green",
-      },
-      {
-        name: "ExpressJs",
-        icon: <SiExpress />,
-      },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb />,
-        iconColor: "limegreen",
-      },
-    ],
-  },
+  
   {
     id: 5,
     title: "Book My Space",
@@ -273,7 +307,7 @@ techniques.`,
         iconColor: "skyblue",
       },
       {
-        name: "Jupyter Notebook",
+        name: "JupyterNotebook",
         icon: <SiJupyter />,
         iconColor: "skyblue",
       },
@@ -286,75 +320,52 @@ techniques.`,
   },
   {
     id: 8,
-    title: "Project Management application",
-    image:
-      "https://miro.medium.com/v2/resize:fit:1400/1*6iO0wm8q4cByvxY6kB9WiQ.png",
+    title: "ShopKaro - React Native E-Commerce App",
+    image: appecom,
     category: "Apps",
     data: {
-      description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
-                       Elevate your project management experience and achieve success with ease.`,
-      demoLink: "https://google.com/",
+      description: `ShopKaro is a fully functional eCommerce mobile application built with React Native. The app allows users to browse products, add them to the cart, and proceed with the checkout process seamlessly. It features user authentication, category-based product listings, and smooth navigation across multiple screens for an engaging shopping experience.
+  Built using React Native, Redux Toolkit, and modern UI components, ShopKaro ensures optimal performance and state management for real-time cart updates and user interactions.`,
+      demoLink: "https://github.com/mishrasatyapriya9/React-Native-ecommerece",
     },
     stack: [
       {
-        name: "React Native",
-        icon: <TbBrandReactNative />,
-        iconColor: "skyblue",
-      },
-      {
-        name: "NodeJs",
-        icon: <FaNodeJs />,
-        iconColor: "green",
-      },
-      {
-        name: "ExpressJs",
-        icon: <SiExpress />,
-      },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb />,
-        iconColor: "limegreen",
+    name: "React Native",
+    icon: <TbBrandReactNative />,
+    iconColor: "skyblue",
+  },
+  {
+    name: "Redux Toolkit",
+    icon: <TbBrandRedux />,
+    iconColor: "purple",
+  },
+        {
+        name: "JavaScript",
+        icon: <IoLogoJavascript />,
+        iconColor: "#F7DF1E",
       },
     ],
   },
-  {
+    {
     id: 9,
-    title: "Mobile bank - App Design",
-    image:
-      "https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png",
-    category: "UI/UX",
+    title: "NAFFT: NFT Marketplace",
+    image: napft,
+    category: "Web",
     data: {
-      description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
-      demoLink: "https://google.com/",
+      description: `Crafted with cutting-edge technology, NAFFT is a fully-featured NFT marketplace where users can seamlessly create, buy, sell, and trade NFTs. Developed using the MERN stack, the platform is reinforced with blockchain integration, ensuring secure and transparent transactions. Advanced 3D features elevate the user experience, providing a dynamic environment for NFT enthusiasts. Hosted on Hostinger, NAFFT showcases my ability to blend innovative technologies into a cohesive, high-performance platform that meets the demands of a rapidly evolving digital market.`,
+      demoLink: "https://napft.com/",
     },
+    buttonname: "live Website",
     stack: [
       {
-        name: "Figma",
-        icon: <CgFigma />,
-        iconColor: "orangered",
-      },
-    ],
-  },
-  {
-    id: 10,
-    title: "Quiz App Development",
-    image:
-      "https://i.pinimg.com/originals/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg",
-    category: "Apps",
-    data: {
-      description: `Elevate engagement and knowledge retention with our Quiz App 
-                      Development project. Seamlessly crafted for interactive learning 
-                      experiences, our app offers customizable quizzes, real-time feedback, 
-                      and captivating visuals. Empower users to test their knowledge anytime,
-                       anywhere, fostering a dynamic learning environment tailored to their 
-                       needs.`,
-      demoLink: "https://google.com/",
-    },
-    stack: [
-      {
-        name: "React Native",
-        icon: <TbBrandReactNative />,
+        name: "ReactJs",
+        icon: <DiReact />,
         iconColor: "skyblue",
+      },
+      {
+        name: "Redux Toolkit",
+        icon: <TbBrandRedux />,
+        iconColor: "purple",
       },
       {
         name: "NodeJs",
@@ -369,6 +380,44 @@ techniques.`,
         name: "MongoDB",
         icon: <SiMongodb />,
         iconColor: "limegreen",
+      },
+      {
+        name: "Blockchain",
+        icon: <SiHiveBlockchain />,
+      },
+    ],
+  },
+    {
+    id: 10,
+    title: "Travel Itinerary Management System - Frontend",
+    image: travelImgPro,
+    category: "Web Apps",
+    data: {
+      description: `The Travel Itinerary Management System is a React-based frontend application designed to help users explore, create, and view detailed travel itineraries for Thailand. 
+    It offers curated itineraries for destinations like Phuket and Krabi, along with personalized recommendations, drag-and-drop itinerary creation, and detailed day-by-day activity breakdowns. 
+    Built with modern React tools and an optimized Vite setup, this project emphasizes interactivity, performance, and clean UI design.`,
+      demoLink: "https://github.com/mishrasatyapriya9/Often-travel-itinerary-frontend",
+    },
+    stack: [
+      {
+        name: "React.js",
+        icon: <DiReact />,
+        iconColor: "skyblue",
+      },
+      {
+        name: "Redux Toolkit",
+        icon: <TbBrandRedux />,
+        iconColor: "purple",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <RiTailwindCssFill />,
+        iconColor: "#38BDF8",
+      },
+      {
+        name: "Framer Motion",
+        icon: <TbBrandFramerMotion />,
+        iconColor: "#FF69B4",
       },
     ],
   },
@@ -434,6 +483,11 @@ export const experience = [
         level: "Experienced",
       },
       {
+        skill: "Redux Toolkit",
+        logo: <SiRedux />,
+        level: "Experienced",      
+      },
+      {
         skill: "React Native",
         logo: <TbBrandReactNative />,
         level: "Experienced",
@@ -454,6 +508,11 @@ export const experience = [
         level: "Intermediate",
       },
       {
+        skill: "PostgreSql",
+        logo: <BiLogoPostgresql />,
+        level: "Intermediate",
+      },
+      {
         skill: "Express JS",
         logo: <SiExpress />,
         level: "Experienced",
@@ -468,29 +527,29 @@ export const experience = [
 ];
 
 export const socialHandles = [
-  {
-    name: "Fiverr",
-    icon: <SiFiverr />,
-    link: "",
-  },
+  // {
+  //   name: "Fiverr",
+  //   icon: <SiFiverr />,
+  //   link: "",
+  // },
   {
     name: "Github",
     icon: <AiFillGithub />,
-    link: "",
+    link: "https://github.com/mishrasatyapriya9",
   },
   {
     name: "LinkedIn",
     icon: <AiFillLinkedin />,
-    link: "",
+    link: "https://www.linkedin.com/in/satyapriya-mishra-3a95a4223/",
   },
   {
     name: "Whatsapp",
     icon: <SiWhatsapp />,
     link: "https://api.whatsapp.com/send?phone=7982319067",
   },
-  {
-    name: "Youtube",
-    icon: <AiFillYoutube />,
-    link: "",
-  },
+  // {
+  //   name: "Youtube",
+  //   icon: <AiFillYoutube />,
+  //   link: "",
+  // },
 ];
