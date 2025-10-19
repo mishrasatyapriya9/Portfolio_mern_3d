@@ -14,7 +14,7 @@ import {
 import { motion } from "framer-motion";
 import Header from "../components/Layout/Header copy";
 import Footer from "../components/Layout/Footer copy";
-import leftphoto from "../assets/aboutusph/5060585_2668382 (1).jpg";
+import leftphoto from "../assets/PS5_2037.JPG";
 
 const AboutSection = styled.section`
   background-color: #f5f5f5;
@@ -120,7 +120,7 @@ const About = ({ scrollToComponent }) => {
                         fontWeight: "bold",
                       }}
                     >
-                      Mehar Hospitality Services
+                      services
                     </MDBCardTitle>
                     <MDBCardText
                       style={{
@@ -134,28 +134,14 @@ const About = ({ scrollToComponent }) => {
                       <br />
                     </MDBCardText>
                     <MDBCardText style={{ color: "#264653", fontSize: "16px" }}>
-                      Mehar Hospitality Services isn't just about finding you a
-                      hotel room; it's about crafting unforgettable travel
-                      memories. We are a passionate team of travel enthusiasts
-                      with a deep love for India's rich tapestry of cultures,
-                      landscapes, and experiences.
-                    </MDBCardText>
+workings
+               </MDBCardText>
                     <SubTitle>Our Mission</SubTitle>
                     <Text>
-                      Our mission is to make premium travel in India accessible
-                      and rewarding for everyone. We believe that discovering
-                      the magic of India shouldn't come at a premium cost.
-                      Through our carefully curated exclusive membership
-                      programs, we unlock a world of travel privileges that
-                      combine exceptional value with unforgettable experiences.
-                    </Text>
+                     mision                   </Text>
                     <SubTitle>Our Vision</SubTitle>
                     <Text>
-                      Providing the best possible value for your travel
-                      investment. With significant savings and exclusive member
-                      benefits, Mehar Hospitality Services ensures you get the
-                      most out of your Indian adventure.
-                    </Text>
+                      vision                    </Text>
                   </MDBCardBody>
                 </MDBCard>
               </MDBCol>
@@ -179,11 +165,7 @@ const About = ({ scrollToComponent }) => {
         <MDBContainer>
           <JoinTitle>Join the Family</JoinTitle>
           <JoinText>
-            Become a member of Mehar Hospitality Services and embark on a
-            journey to discover the true essence of India. We're more than just
-            a membership program; we're your trusted travel partner, ensuring
-            every step of your Indian adventure is exceptional.
-          </JoinText>
+            family          </JoinText>
         </MDBContainer>
       </JoinSection>
       <Footer />

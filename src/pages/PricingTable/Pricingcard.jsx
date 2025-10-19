@@ -38,7 +38,7 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
                 <div className="pricing-body">
                   <div className="price-wrapper">
-                    <span className="price">₹15,999/-</span>
+                    <span className="price">$3000</span>
                     <br />
                     <p
                       className="price"
@@ -75,7 +75,7 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
                 <div className="pricing-body">
                   <div className="price-wrapper">
-                    <span className="price">₹25,999/-</span>
+                    <span className="price">$5000</span>
                     <br />
                     <p
                       className="price"
@@ -117,7 +117,7 @@ const Pricingcard = ({ scrollToComponent }) => {
                 </div>
                 <div className="pricing-body">
                   <div className="price-wrapper">
-                    <span className="price">₹35,999/-</span>
+                    <span className="price">$7000</span>
                     <br />
                     <p
                       className="price"

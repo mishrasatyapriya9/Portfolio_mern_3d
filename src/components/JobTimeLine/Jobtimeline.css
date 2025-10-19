@@ -37,11 +37,60 @@ h3 {
   color: rgb(250, 251, 251) !important;
 }
 
+/* Description List Styling */
 #description {
   margin: 1.5em 0 2em 0;
-  color:rgb(53, 53, 53);
-  font-family: poppins;
+  font-family: Poppins, sans-serif;
+  color: #ffffff; /* bright white for high contrast */
 }
+
+#description ul {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+  margin: 0;
+}
+
+#description li {
+  position: relative;
+  padding-left: 2em; /* space for custom bullet */
+  margin-bottom: 1em;
+  line-height: 1.6;
+  font-size: 16px;
+  color: black; /* ensure li text inherits correct color */
+}
+
+/* Custom bullet using ::before */
+#description li::before {
+  content: "•"; /* bullet symbol */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0ac591; /* green bullet for work */
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Optional: Different bullet color for school items */
+.vertical-timeline-element-icon + #description li::before {
+  color: #f3bc3b; /* yellow bullet for school */
+}
+
+/* Hover effect for bullets */
+#description li:hover::before {
+  transform: scale(1.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  #description li {
+    padding-left: 1.5em;
+  }
+  #description li::before {
+    font-size: 16px;
+  }
+}
+
 
 .button {
   text-decoration: none;

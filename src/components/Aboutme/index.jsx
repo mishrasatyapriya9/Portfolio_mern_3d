@@ -1,6 +1,6 @@
 import React,{useEffect, useRef} from 'react'
 import "./About.css"
-import profile2 from '../../assets/SATYA PROFILE PICTURE.png'
+import profile2 from '../../assets/PS5_2037.JPG'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import { Link } from "react-router-dom";
@@ -50,7 +50,7 @@ const About = () => {
             budget.
           </p>
           <button className="btn btn__primary buttonre" style={{color:"white"}}>
-            <Link to="https://drive.google.com/file/d/1JCznJDpsuETk-K06SSbJ6kNc5MBF_FjG/view">
+            <Link to="https://drive.google.com/file/d/16oWdCb94qKvMGTpwOxIQFl1GI8bwWuqX/view?usp=sharing">
               See Resume
             </Link>
           </button>

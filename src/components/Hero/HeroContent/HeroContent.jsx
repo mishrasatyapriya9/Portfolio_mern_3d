@@ -75,9 +75,23 @@ const HeroContent = () => {
             <motion.button variants={textVarients} className="btn1">
               See latest Works
             </motion.button>
-            <motion.button variants={textVarients} className="btn2">
+           <motion.button
+          variants={textVarients}
+          className="btn2"
+          onClick={() => {
+            const email = "mishrasatyapriya2003@gmail.com";
+            const subject = "Full stack developer Opening";
+            const body = "Hi Satyapriya,\n\nI would like to discuss...";
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(body)}`;
+            window.open(gmailUrl, "_blank");
+          }}
+          >
               Contact me
-            </motion.button>
+          </motion.button>
+
+
           </motion.div>
         </motion.div>
         <motion.div

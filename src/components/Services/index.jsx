@@ -73,9 +73,18 @@ const Services = () => {
               </p>
             </div>
             <div className="service__bottom">
-              <button className="btn btn__primary">
-                <Link>Read more</Link>
-              </button>
+             <button
+    className="btn btn__primary"
+    onClick={() => {
+const email = "mishrasatyapriya2003@gmail.com";
+const subject = "UI/UX Design Project Inquiry";
+const body = "Hi,\n\nI want to discuss a UI/UX design project...";
+const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+window.open(gmailUrl, "_blank");
+    }}
+  >
+    Contact Me
+  </button>
             </div>
           </article>
 
@@ -101,9 +110,17 @@ const Services = () => {
               </p>
             </div>
             <div className="service__bottom">
-              <button className="btn btn__primary">
-                <Link>Read more</Link>
-              </button>
+<button
+    className="btn btn__primary"
+    onClick={() => {
+      const email = "mishrasatyapriya2003@gmail.com";
+const subject = "Web Development Project Inquiry";
+const body = "Hi,\n\nI would like to discuss a web development project...";
+const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+window.open(gmailUrl, "_blank");    }}
+  >
+    Contact Me
+  </button>
             </div>
           </article>
 
@@ -117,21 +134,29 @@ const Services = () => {
               <div className="icon__container">
                 <TfiWrite className="icon" />
               </div>
-              <h3 className="title">Content Creation</h3>
+              <h3 className="title">React Native App Development</h3>
             </div>
 
             <div className="service__middle">
               <p className="text__muted description">
-                Delivering engaging and impactful content that resonates with
-                your audience. I create compelling copy and visual content that
-                drives engagement, strengthens your brand, and communicates your
-                message effectively.
+              Building high-performance, cross-platform mobile applications using React Native. 
+             I deliver intuitive and responsive apps that provide seamless user experiences, 
+             help grow your business, and bring your ideas to life on both iOS and Android.
               </p>
             </div>
             <div className="service__bottom">
-              <button className="btn btn__primary">
-                <Link>Read more</Link>
-              </button>
+              <button
+  className="btn btn__primary"
+  onClick={() => {
+    const email = "mishrasatyapriya2003@gmail.com";
+    const subject = "React Native Project Inquiry";
+    const body = "Hi,\n\nI want to discuss a React Native app project...";
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailUrl, "_blank");
+  }}
+>
+  Contact Me
+</button>
             </div>
           </article>
 

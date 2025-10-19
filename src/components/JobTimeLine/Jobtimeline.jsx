@@ -12,23 +12,25 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function Jobtimeline() {
-  let workIconStyles = { background: "#06D6A0" };
-  let schoolIconStyles = { background: "#f9c74f" };
+  const workIconStyles = { background: "#06D6A0" };
+  const schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div className="timelinecontainer">
-      <h1 className="timelinetitle"><h3 className="heading">Professional</h3>Journey</h1>
+    <div className="timelinecontainer" id="jobtimeline">
+      <h1 className="timelinetitle">
+        <h3 className="heading">Professional</h3>Journey
+      </h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
-          let isWorkIcon = element.icon === "work";
-          let showButton =
+          const isWorkIcon = element.icon === "work";
+          const showButton =
             element.buttonText !== undefined &&
             element.buttonText !== null &&
             element.buttonText !== "";
 
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id}
               date={element.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
@@ -41,13 +43,28 @@ function Jobtimeline() {
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h5>
-              <p id="description">{element.description}</p>
+
+              {/* Render work descriptions as bullet points, schools as plain text */}
+              {isWorkIcon && element.description.length > 0 ? (
+                <ul id="description">
+                  {element.description.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p id="description">
+                  {element.description.length > 0
+                    ? element.description.join(" ")
+                    : ""}
+                </p>
+              )}
+
               {showButton && (
                 <a
-                  className={`button ${
-                    isWorkIcon ? "workButton" : "schoolButton"
-                  }`}
+                  className={`button ${isWorkIcon ? "workButton" : "schoolButton"}`}
                   href={element.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {element.buttonText}
                 </a>

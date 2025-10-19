@@ -38,7 +38,7 @@ function Header({ scrollToComponent }) {
         <Container fluid>
           <img
             src={satyalogo}
-            alt="Mehar Hospitality Services"
+            alt=" Services"
             className="icon"
           />
           <Navbar.Brand>
@@ -63,7 +63,7 @@ function Header({ scrollToComponent }) {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link as={Link} to="/">
+                <Nav.Link as={Link} to="/" onClick={() => scrollToComponent("jobtimeline")}>
                   <motion.h6
                     style={{ color: "black" }}
                     initial={{ opacity: 0, scale: 0.6 }}
@@ -71,7 +71,22 @@ function Header({ scrollToComponent }) {
                     transition={{ duration: 1.5, type: spring, stiffness: 100 }}
                     whileHover={{ y: -2 }}
                   >
-                    Home
+                    Experience
+                  </motion.h6>
+                </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/"
+                  onClick={() => scrollToComponent("skill")}
+                >
+                  <motion.h6
+                    style={{ color: "black" }}
+                    initial={{ opacity: 0, scale: 0.6 }}
+                    animate={{ opacity: 2, scale: 1 }}
+                    transition={{ duration: 2, type: spring, stiffness: 100 }}
+                    whileHover={{ y: -2 }}
+                  >
+                    Skills
                   </motion.h6>
                 </Nav.Link>
                 <Nav.Link
@@ -116,7 +131,7 @@ function Header({ scrollToComponent }) {
                     transition={{ duration: 3, type: spring, stiffness: 100 }}
                     whileHover={{ y: -2 }}
                   >
-                    About Us
+                    About Me
                   </motion.h6>
                 </Nav.Link>
                 <Nav.Link
@@ -131,7 +146,7 @@ function Header({ scrollToComponent }) {
                     transition={{ duration: 3.5, type: spring, stiffness: 100 }}
                     whileHover={{ y: -2 }}
                   >
-                    Contact Us
+                    Contact Me
                   </motion.h6>
                 </Nav.Link>
               </Nav>
